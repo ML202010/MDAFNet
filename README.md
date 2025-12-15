@@ -73,7 +73,13 @@ python main.py --dataset-dir './dataset/IRSTD-1K' --batch-size 4 --mode 'test' -
 
 ### Quantitative Results
 
-###正在整理，稍后发布。
+| Dataset | IoU (×10⁻²) | Pd (×10⁻²) | Fa (×10⁻⁶) | Weights |
+|:-------:|:------------:|:----------:|:----------:|:-------:|
+| IRSTD-1K | 70.11 | 95.92 | 8.43 | [Download]([https://drive.google.com/file/d/1KqlOVWIktfrBrntzr53z1eGnrzjWCWSe/view?usp=sharing](https://drive.google.com/file/d/1IK__ulzS4kVt6Jtzk3Ljx3AL-jVxKnfS/view?usp=drive_link) |
+| NUAA-SIRST | 79.42 | 100.00 | 3.90 | [Download]([https://drive.google.com/file/d/13JQ3V5xhXUcvy6h3opKs15gseuaoKrSQ/view?usp=sharing](https://drive.google.com/file/d/1IK__ulzS4kVt6Jtzk3Ljx3AL-jVxKnfS/view?usp=drive_link)) |
+| SIRST-Aug | 75.60 | 99.45  | 15.15 | [Download]([https://drive.google.com/file/d/1lcmTgft0LStM7ABWDIMRHTkcOv95p9LO/view?usp=sharing](https://drive.google.com/file/d/1IK__ulzS4kVt6Jtzk3Ljx3AL-jVxKnfS/view?usp=drive_link)) |
+
+
 ## 📂 Project Structure
 
 ```
