@@ -1,5 +1,4 @@
 ## 🛠️ Requirements
-
 ### Environment
 - **Python** 3.8+
 - **PyTorch** 1.13.0+
@@ -10,7 +9,6 @@
 xxxx
 
 ## 📁 Dataset Preparation
-
 We evaluate our method on three public datasets: **IRSTD-1K**, **NUAA-SIRST**, and **SIRST-Aug**.
 
 | Dataset | Link |
@@ -20,19 +18,18 @@ We evaluate our method on three public datasets: **IRSTD-1K**, **NUAA-SIRST**, a
 | SIRST-Aug | [Download](https://github.com/Tianfang-Zhang/AGPCNet) |
 
 Please organize the datasets as follows:
-
 ```
 ├── dataset/
 │    ├── IRSTD-1K/
 │    │    ├── images/
-│    │    │    ├── XDU514png
+│    │    │    ├── XDU514.png
 │    │    │    ├── XDU646.png
 │    │    │    └── ...
 │    │    ├── masks/
 │    │    │    ├── XDU514.png
 │    │    │    ├── XDU646.png
 │    │    │    └── ...
-│    │    └── trainval.txt
+│    │    ├── trainval.txt
 │    │    └── test.txt
 │    ├── NUAA-SIRST/
 │    │    └── ...
@@ -41,7 +38,6 @@ Please organize the datasets as follows:
 ```
 
 ## 🚀 Training
-
 ```bash
 python main.py --dataset-dir '/path/to/dataset' \
                --batch-size 4 \
@@ -56,7 +52,6 @@ python main.py --dataset-dir './dataset/IRSTD-1K' --batch-size 4 --epochs 400 --
 ```
 
 ## 📊 Testing
-
 ```bash
 python main.py --dataset-dir '/path/to/dataset' \
                --batch-size 4 \
@@ -69,24 +64,15 @@ python main.py --dataset-dir '/path/to/dataset' \
 python main.py --dataset-dir './dataset/IRSTD-1K' --batch-size 4 --mode 'test' --weight-path './weight/irstd1k_weight.pkl'
 ```
 
-
 ## 📈 Results
-
 ### Quantitative Results
-
 | Dataset | IoU (×10⁻²) | Pd (×10⁻²) | Fa (×10⁻⁶) | Weights |
 |:-------:|:------------:|:----------:|:----------:|:-------:|
-| IRSTD-1K | 70.11 | 95.92 | 8.43 | [Download](https://drive.google.com/file/d/1KqlOVWIktfrBrntzr53z1eGnrzjWCWSe/view?usp=sharing](https://drive.google.com/file/d/1IK__ulzS4kVt6Jtzk3Ljx3AL-jVxKnfS/view?usp=drive_link) |
-| NUAA-SIRST | 79.42 | 100.00 | 3.90 | [Download](https://drive.google.com/file/d/13JQ3V5xhXUcvy6h3opKs15gseuaoKrSQ/view?usp=sharing](https://drive.google.com/file/d/1IK__ulzS4kVt6Jtzk3Ljx3AL-jVxKnfS/view?usp=drive_link](https://drive.google.com/file/d/1O3YkBuSo5QtfzL-l5d6yJrFTzMK1egwt/view?usp=sharing) |
-| SIRST-Aug | 75.60 | 99.45  | 15.15 | [Download](https://drive.google.com/file/d/1lcmTgft0LStM7ABWDIMRHTkcOv95p9LO/view?usp=sharing](https://drive.google.com/file/d/1IK__ulzS4kVt6Jtzk3Ljx3AL-jVxKnfS/view?usp=drive_link](https://drive.google.com/file/d/1TLD9PYpPDF2XTaM5BWHoxa-7myBqP0TX/view?usp=sharing) |
-
-
-## 📂 Project Structure
-
-```
+| IRSTD-1K | 70.11 | 95.92 | 8.43 | [Download](https://drive.google.com/file/d/1KqlOVWIktfrBrntzr53z1eGnrzjWCWSe/view?usp=sharing) |
+| NUAA-SIRST | 79.42 | 100.00 | 3.90 | [Download](https://drive.google.com/file/d/1O3YkBuSo5QtfzL-l5d6yJrFTzMK1egwt/view?usp=sharing) |
+| SIRST-Aug | 75.60 | 99.45 | 15.15 | [Download](https://drive.google.com/file/d/1TLD9PYpPDF2XTaM5BWHoxa-7myBqP0TX/view?usp=sharing) |
 
 ## 📂 Project Structure
-
 ```
 MDAFNet/
 ├── dataset/          # Dataset loading and preprocessing
@@ -99,8 +85,6 @@ MDAFNet/
 ```
 
 ## 🙏 Acknowledgement
-
 We sincerely thank the following works for their contributions:
-
 - [BasicIRSTD](https://github.com/XinyiYing/BasicIRSTD) - A comprehensive toolbox 
 - [MSHNet](https://github.com/ying-fu/MSHNet) - Scale and Location Sensitive Loss
