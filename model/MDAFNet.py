@@ -207,7 +207,7 @@ class MDAFNet(nn.Module):
         x_e2 = self.edge_fusion_enc_2(x_e2, edge_2)
         x_e3 = self.edge_fusion_enc_3(x_e3, edge_3)
 
-        # 🔥 分层特征增强
+        # 分层特征增强
         x_e0 = self.hwfe0(x_e0)  #
         x_e1 = self.hwfe1(x_e1)  #
         x_e2 = self.hwfe2(x_e2)  # HWFE
