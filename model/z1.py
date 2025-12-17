@@ -216,7 +216,6 @@ class HWFE(nn.Module):
         
         out = self.fast_idwt(ll, lh, hl, hh)
         out = self.fsa(out)
-        
-        # ✅ 使用可学习的权重进行残差连接
+
         return torch.clamp(self.alpha, 0, 1) * f + torch.clamp(self.beta, 0, 1) * out
 
