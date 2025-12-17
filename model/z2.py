@@ -41,7 +41,7 @@ class ChannelAttention(nn.Module):
         self.avg_pool = nn.AdaptiveAvgPool2d(1)
         self.max_pool = nn.AdaptiveMaxPool2d(1)
 
-        # 👇 确保最小通道数
+  
         mid_channels = max(in_channels // reduction, 4)
 
         self.fc = nn.Sequential(
