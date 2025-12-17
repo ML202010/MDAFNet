@@ -194,7 +194,7 @@ class HWFE(nn.Module):
         )
         self.fsa = FrequencyStripAttention(k=channels, kernel=7)
         
-        # ✅ 添加可学习的残差权重
+
         self.alpha = nn.Parameter(torch.tensor(residual_weight))  # 原始特征权重
         self.beta = nn.Parameter(torch.tensor(1.0 - residual_weight))  # HWFE特征权重
 
