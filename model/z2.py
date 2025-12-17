@@ -80,7 +80,6 @@ class SpatialAttention(nn.Module):
 
 
 class CASAB(nn.Module):
-    """改进版CASAB - 修复输出逻辑"""
 
     def __init__(self, in_channels, reduction=16):
         super(CASAB, self).__init__()
@@ -161,5 +160,5 @@ class MEEM(nn.Module):
 
         out = self.out_conv(out)
 
-        out = self.ca(out) * out  # 通道注意力
+        out = self.ca(out) * out 
         return out
