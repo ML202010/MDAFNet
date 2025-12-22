@@ -80,7 +80,6 @@ MDAFNet/
 ├── utils/            # Utility functions
 ├── weight/           # Pretrained weights
 ├── main.py           # Main entry point
-├── requirements.txt  # Dependencies
 └── README.md
 ```
 
