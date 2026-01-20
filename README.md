@@ -4,10 +4,6 @@
 - **PyTorch** 1.13.0+
 - **CUDA** 11.6+
 - **Ubuntu** 18.04 or higher / Windows 10
-
-### Installation
-xxxx
-
 ## 📁 Dataset Preparation
 We evaluate our method on three public datasets: **IRSTD-1K**, **NUAA-SIRST**, and **SIRST-Aug**.
 
